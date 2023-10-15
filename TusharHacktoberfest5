@@ -1,0 +1,49 @@
+**************************************************** Creating a full-fledged Jarvis program *****************************************************
+import java.util.Scanner;
+import java.util.Random;
+
+public class JarvisAssistant {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hello! I'm Jarvis. How can I assist you today?");
+        
+        while (true) {
+            System.out.print("You: ");
+            String userCommand = scanner.nextLine().toLowerCase();
+
+            if (userCommand.contains("hello") || userCommand.contains("hi")) {
+                System.out.println("Jarvis: Hello! How can I help you?");
+            } else if (userCommand.contains("time")) {
+                // You can use more advanced time and date APIs for accurate time information.
+                System.out.println("Jarvis: The current time is " + getCurrentTime());
+            } else if (userCommand.contains("weather")) {
+                // You can integrate with a weather API to get real weather information.
+                System.out.println("Jarvis: The weather is nice and sunny today.");
+            } else if (userCommand.contains("joke")) {
+                System.out.println("Jarvis: " + getRandomJoke());
+            } else if (userCommand.contains("bye")) {
+                System.out.println("Jarvis: Goodbye! Have a great day.");
+                break;
+            } else {
+                System.out.println("Jarvis: Sorry, I can't assist with that.");
+            }
+        }
+    }
+
+    // Get the current time (simplified)
+    public static String getCurrentTime() {
+        return java.time.LocalTime.now().toString();
+    }
+
+    // Get a random joke (simplified)
+    public static String getRandomJoke() {
+        String[] jokes = {
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Parallel lines have so much in common. It's a shame they'll never meet.",
+            "Why don't skeletons fight each other? They don't have the guts."
+        };
+        Random random = new Random();
+        int index = random.nextInt(jokes.length);
+        return jokes[index];
+    }
+}
