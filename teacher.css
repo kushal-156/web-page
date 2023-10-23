@@ -1,0 +1,61 @@
+* {
+  margin: 10px;
+  padding: 10px;
+}
+.section {
+  background-color: #00ffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px black;
+}
+
+#img-circle {
+  border: 3px solid black;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  background-image: url("https://png.pngtree.com/background/20210709/original/pngtree-hand-drawn-cartoon-world-teacher-day-background-picture-image_963550.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+}
+#main {
+  background-color: chocolate;
+  margin-top: 15px;
+}
+
+h2 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 45px;
+  text-shadow: 5px 5px 5px black;
+  color: #bfd641;
+  shado
+}
+p {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 125%;
+}
+#foot {
+  text-align: right;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bold;
+}
+#p1,
+#p3 {
+  font-style: italic;
+}
+#p2 {
+  font-weight: bold;
+  font-style: italic;
+}
+#p4 {
+  font-weight: bold;
+}
