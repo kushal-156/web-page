@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <script src="script.js"></script>
+        <h2>Contact Us</h2>
+        <div class="login">
+            <form class="contact" method="get" action="contact.php">
+                <label for="Yname">Your Name</label>
+                <input type="text" id="Yname" name="Yname" class="Name" placeholder="Enter your name" required>
+
+                <label for="Mail">Your Email</label>
+                <input type="email" id="Mail" name="Mail" class="Name" placeholder="example@email.com" required>
+
+                <label for="Phoneno">Your Phone No.</label>
+                <input type="tel" id="Phoneno" name="Phoneno" class="Name" placeholder="123-456-7890" required>
+
+                <label for="Message">Your Message</label>
+                <textarea id="Message" name="Message" class="Name" rows="4" placeholder="Write your message here" required></textarea>
+
+                <input type="submit" class="button button1" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
