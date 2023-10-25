@@ -1,0 +1,18 @@
+numbers = [1, 2, 3, 4, 5]
+multipliers = [2, 3, 4, 5, 6]
+
+# Map and multiply each number with the corresponding multiplier
+result = numbers.each_with_index.map do |number, index|
+  number * multipliers[index]
+end
+
+# Calculate the sum and product of the mapped values
+sum = result.inject(0, :+)
+product = result.inject(1, :*)
+
+# Output the results
+puts "Original Numbers: #{numbers}"
+puts "Multipliers: #{multipliers}"
+puts "Mapped and Multiplied: #{result}"
+puts "Sum of Mapped Values: #{sum}"
+puts "Product of Mapped Values: #{product}"
