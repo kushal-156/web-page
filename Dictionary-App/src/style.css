@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+/* *:not(i){
+    color:#ae9cff;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #3498db;
+}
+main {
+  height: 94vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  background-color: white;
+  width: 90vmin;
+  border-radius: 5px;
+  padding: 50px 50px;
+  box-shadow: 0px 20px 40px rgba(38, 33, 61, 0.2);
+  transition:height .7s;
+}
+.search-box {
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #3498db;
+  margin-right: 50px;
+  padding-left: 10px;
+  font-size: 1rem;
+  /* padding-bottom: 2px; */
+}
+::-webkit-input-placeholder {
+  font-size: 1rem;
+  transform: translateY(0.25rem);
+  color: rgb(136, 134, 134, 0.8);
+}
+.search-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+
+}
+.search-btn:hover{
+    background-color: #2980b9;
+}
+.words-sound {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.voice {
+  border: none;
+  color: #3498db;
+  font-size: 1.5rem;
+  background-color: white;
+}
+.Prons {
+  display: flex;
+  font-style: italic;
+  gap: 10px;
+  color: rgb(52, 152, 219,.7);
+  margin: 5px 0 10px 5px;
+}
+.meaning {
+  font-size: 0.9rem;
+}
+.Example {
+  font-size: 0.9rem;
+  border-left: 5px solid #3498db;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+.error{
+    margin-top: 20px;
+    text-align: center;
+}
+.copyright{
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+    /* transform: translateY(4rem); */
+}
+@media screen and (max-width:576px){
+    .container{
+        padding:20px 20px;
+    }
+    .search{
+        padding:0;
+        /* width:120%; */
+       /* flex-direction: column; */
+    }
+    ::-webkit-input-placeholder {
+        font-size: .75rem;
+      }
+    .search-btn{
+        padding:10px 15px;
+    }
+    }
